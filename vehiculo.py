@@ -11,7 +11,6 @@ class Vehiculo:
         self.eliminado = False  # Indica si el vehículo ha sido eliminado
 
     def conducir(self):
-
         while not self.semaforo.detener and not self.eliminado:
             tiempo_espera = random.randint(1, 5)
             time.sleep(tiempo_espera)
